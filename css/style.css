@@ -1,0 +1,53 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Tektur', cursive;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {  
+  -webkit-appearance: none;   margin: 0; 
+}
+
+input[type=number]{
+    width: 4rem;
+}
+
+form fieldset .uyari_notu{
+   opacity: 0.6;
+   color: red;
+   font-size: 13px;
+}
+
+form fieldset ul{
+    list-style: none;
+    padding: 0;
+}
+
+form fieldset ul li{
+    display: flex;
+    padding: 10px 0px;
+}
+
+form fieldset ul li:last-child button:first-child{
+    margin-right: 5rem;
+}
+
+form fieldset ul li label{
+    width: 10rem;
+   
+}
+
+#sonuclar{
+display: none;
+}
+#sonuclar h5{
+    color: green
+}

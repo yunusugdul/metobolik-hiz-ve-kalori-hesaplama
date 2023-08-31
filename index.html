@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Dancing+Script&family=Domine:wght@400;700&family=Handlee&family=Lobster&family=Lumanosimo&family=Oswald:wght@300;500&family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container-fluid h-100 px-5">
+        <div class="row h-100  d-flex align-items-center">
+            <div class="col-6 ps-5  d-flex justify-content-center ">
+                <form method="post" id="myform">
+                    <fieldset>
+                        <legend>Kalori İhtiyacını Hesapla</legend>
+                        <div class="uyari_notu">Bu alandaki tüm bilgilerin doldurulması zorunludur.</div>
+                        <ul>
+                            <li>
+                                <label for="yas">Yaş</label>
+                                <input type="number" id="yas" required>
+                            </li>
+                            <li>
+                                <label for="boy">Boy</label>
+                                <input type="number" id="boy" required>
+                            </li>
+                            <li>
+                                <label for="kilo">Kilo</label>
+                                <input type="number" id="kilo" required>
+                            </li>
+                            <li>
+                                <label>Cinsiyet</label>
+                                <fieldset class="d-flex flex-column">
+                                    
+                                    <label for="cinsiyet">
+                                        <input type="radio" name="cinsiyet" id="cinsiyet" value="E" required> Erkek  
+                                    </label>
+                                    <label for="cinsiyet">
+                                        <input type="radio" name="cinsiyet" id="cinsiyet" value="K" required> Kadın 
+                                    </label>
+                                </fieldset>
+                            </li>
+                            <li>
+                                <label for="aktivite">Aktivite Durumu</label>
+                                <select name="aktivite" id="aktivite" required>
+                                <option value="1">Masa başı bir işte çalışıyorum, fazla hareket etmiyorum</option>
+                                <option value="2">Masa başı bir işte çalışıyorum, hafif egzersizler yapıyorum</option>
+                                <option value="3">Az hareket ettiğim bir iş yapıyorum, yoğun egzersizler yapıyorum</option>
+                                <option value="4">Çok aktif olduğum bir işim var ve orta düzeyde egzersizler yapıyorum</option>
+                                <option value="5">Çok aktif olduğum bir işim var ve yoğun derecede egzersizler yapıyorum</option>
+                                </select>
+                            </li>
+                            <li>
+                                <button type="submit" class="btn btn-success">Gönder</button>
+                                <button type="reset" class="btn btn-danger">Temizle</button>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                
+            </div>
+           <div class="col-6 pb-5">
+            <div class=" px-5" id="sonuclar">
+                <h5>Bazal Metobolik Hızınız</h5>
+                <div id="bmhSonuc" class="mb-5"></div>
+                <h5>Almanız Gereken Kalori</h5>
+                <div id="kaloriSonuc"></div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+
+   <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
